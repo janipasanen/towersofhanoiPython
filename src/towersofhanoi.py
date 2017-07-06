@@ -1,7 +1,9 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 '''
 Created on 6 juli 2017
 © 2017 Jani Pasanen
-
 
 @author: Jani Pasanen
 Python script to display a recursive algorithm for solving the 
@@ -11,17 +13,17 @@ Python script to display a recursive algorithm for solving the
 
 
 # Print when reach base case (n == 1)
-def printmove(frm, to):#
-    print('Move from ' + str(frm) + ' to ' + str(to))
+def printmove(a, b):#
+    print('Move from ' + str(a) + ' to ' + str(b))
 
 # The algorithm    
-def move(n, frm, to, spare):
+def move(n, a, b, c):
     if n == 1:
-        printmove(frm, to)
+        printmove(a, b)
     else:
-        move(n-1, frm, spare, to)
-        move(1, frm, to, spare)
-        move(n-1, spare, to, frm)
+        move(n-1, a, c, b)
+        move(1, a, b, c)
+        move(n-1, c, b, a)
  
  
 # enables this module to be run as a script. To run as script python3 towersofhanoi.py n A B C
