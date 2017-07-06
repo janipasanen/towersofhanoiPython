@@ -1,8 +1,9 @@
 '''
 Created on 6 juli 2017
+© 2017 Jani Pasanen
+
 
 @author: Jani Pasanen
-2017 Jani Pasanen
 Python script to display a recursive algorithm for solving the 
 "Towers of Hanoi" puzzle for arbitrary n
 
