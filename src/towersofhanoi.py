@@ -10,7 +10,7 @@ Python script to display a recursive algorithm for solving the
 '''
 
 
-# Print when reach basecase (n == 1)
+# Print when reach base case (n == 1)
 def printmove(frm, to):#
     print('Move from ' + str(frm) + ' to ' + str(to))
 
